@@ -1,0 +1,21 @@
+[
+    {
+        "id":1,
+        "name":"William",
+        "review":"This Game is good",
+        "ratings":4.8
+    },
+    {
+        "id":2,
+        "name":"Fahim",
+        "review":"The game was great but 2022 update ruined everything",
+        "ratings":4.5
+    },
+    {
+        "id":3,
+        "name":"Ashraf",
+        "review":"This is probable the best action football game on the playstore",
+        "ratings":4.3
+    }
+
+]

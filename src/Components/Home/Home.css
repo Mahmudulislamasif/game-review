@@ -1,0 +1,9 @@
+.header
+{
+    text-align: left;
+}
+.load-button
+{
+    display: flex;
+    justify-content: flex-start;
+}
