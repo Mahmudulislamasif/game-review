@@ -4,14 +4,15 @@ import ReviewProduct from '../ReviewProduct/ReviewProduct';
 import './Home.css'
 const Home = () => {
     const [reviews,setReviews]=useState([])
+    const [showAll, setAll]=useState(false)
     useEffect(()=>{
         fetch('GameReviewData.json')
         .then(res=>res.json())
         .then(data=>setReviews(data))
     },[])
-    const ShowAllReviews =(reviews)=>
+    const ShowAllReviews =()=>
     {
-        
+        setAll(true)
 
     }
     return (
@@ -34,7 +35,7 @@ const Home = () => {
                 <h1>Total Reviews</h1> 
             </div>
                 {
-                    reviews.map(newReview=><ReviewProduct newReview={newReview}></ReviewProduct>)
+                   showAll && reviews.slice(0,3).map(newReview=><ReviewProduct newReview={newReview}></ReviewProduct>)
                 } 
             <div>
                 <button onClick={()=>ShowAllReviews(reviews)}>Review All</button>
