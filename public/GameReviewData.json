@@ -19,9 +19,21 @@
     },
     {
         "id":4,
-        "name":"Ashraf",
-        "review":"This is probable the best action football game on the playstore",
-        "ratings":4.3
+        "name":"Jawadul Karim",
+        "review":"Everything is good except the main game paly",
+        "ratings":3
+    },
+    {
+        "id":5,
+        "name":"Javed Eshaan",
+        "review":"The animations, graphics are good to watch.",
+        "ratings":3
+    },
+    {
+        "id":6,
+        "name":"John Black",
+        "review":"Nicely done, But not perfect",
+        "ratings":4
     }
 
 

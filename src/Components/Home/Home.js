@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Image from '../../../src/GameImage/DreamLeague.png'
 import ReviewProduct from '../ReviewProduct/ReviewProduct';
 import './Home.css'
 const Home = () => {
     const [reviews,setReviews]=useState([])
     const [showAll, setAll]=useState(false)
+    const navigate=useNavigate();
     useEffect(()=>{
         fetch('GameReviewData.json')
         .then(res=>res.json())
@@ -12,8 +14,7 @@ const Home = () => {
     },[])
     const ShowAllReviews =()=>
     {
-        setAll(true)
-
+        navigate('/review')
     }
     return (
         <div className='container'>
@@ -35,7 +36,7 @@ const Home = () => {
                 <h1>Total Reviews</h1> 
             </div>
                 {
-                   showAll && reviews.slice(0,3).map(newReview=><ReviewProduct newReview={newReview}></ReviewProduct>)
+                 reviews.map(newReview=><ReviewProduct newReview={newReview}></ReviewProduct>)
                 } 
             <div>
                 <button onClick={()=>ShowAllReviews(reviews)}>Review All</button>
