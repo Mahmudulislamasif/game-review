@@ -20,20 +20,20 @@
     {
         "id":4,
         "name":"Himel Dhar",
-        "review":"Everything is good except the main game paly",
+        "review":"Everything is good except the main game play.",
         "ratings":3
     },
     {
         "id":5,
         "name":"Arpan Barua",
         "review":"The animations, graphics are good to watch.",
-        "ratings":3
+        "ratings":4.5
     },
     {
         "id":6,
         "name":"Arshadul Houque",
         "review":"Nicely done, But not perfect",
-        "ratings":4
+        "ratings":3.6
     }
 
 

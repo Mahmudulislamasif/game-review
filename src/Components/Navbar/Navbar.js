@@ -4,10 +4,10 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <div className='navbar-parent-class'>
-            <Link className='navbar-class navbar-class-one col-md-2' to='/home'>Home</Link>
-            <Link className='navbar-class navbar-class-two col-md-2' to='/review'>Review</Link>
-            <Link className='navbar-class navbar-class-three col-md-2' to='/dashboard'>Dashboard</Link>
-            <Link className='navbar-class navbar-class-four col-md-2' to='/blogs'>Blogs</Link>
+            <Link className='navbar-class col-md-2' to='/home'>Home</Link>
+            <Link className='navbar-class col-md-2' to='/review'>Review</Link>
+            <Link className='navbar-class col-md-2' to='/dashboard'>Dashboard</Link>
+            <Link className='navbar-class col-md-2' to='/blogs'>Blogs</Link>
         </div>
     );
 };

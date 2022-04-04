@@ -46,7 +46,7 @@ const Dashboard = () => {
               <div className='col-md-6'>
               <h3>Month Wise Sell</h3>
               <LineChart width={300} height={250} data={data}
-                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                margin={{ top: 5, right: 30, left: 10, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month" />
                 <YAxis />
@@ -58,7 +58,7 @@ const Dashboard = () => {
               <div className='col-md-6'>
                       <div>
                       <h3>Month Wise Sell</h3>
-                      <div className='p-3'>
+                      <div className='p-3 d-flex justify-content-center'>
                       <BarChart width={300} height={250} data={data}>
                         <CartesianGrid strokeDasharray="3 4" />
                         <XAxis dataKey="month" />

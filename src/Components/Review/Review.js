@@ -6,7 +6,7 @@ const Review = () => {
     const [reviews]=useHooks([])
     
     return (
-        <div>
+        <div className='container'>
                <div className='row g-4'>
                {
                  reviews.map(newReview=><ReviewProduct key={newReview.id} newReview={newReview}></ReviewProduct>)

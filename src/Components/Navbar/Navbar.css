@@ -14,17 +14,5 @@
 {
     text-decoration: none;
     color: white;
-}
-
-.navbar-class-one
-{
-    margin-right: 5px;
-}
-.navbar-class-two
-{
-    margin-right: 5px;
-}
-.navbar-class-three
-{
-    margin-right: 5px;
+    padding-left: 10px;
 }

@@ -1,8 +1,13 @@
 .game-review-demo
 {
     text-align: left;
-    background-color: orange;
+    background-color: rgb(240, 240, 240);
     padding: 2rem;
     color: black;
     margin-bottom: 20px;
+}
+.rating-class
+{
+    display: flex;
+    justify-content: space-between;
 }
