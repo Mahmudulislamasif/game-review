@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Image from '../../../src/GameImage/DreamLeague.png'
+import useHooks from '../Hooks/Hooks';
 import ReviewProduct from '../ReviewProduct/ReviewProduct';
 import './Home.css'
 const Home = () => {
-    const [reviews,setReviews]=useState([])
-    const [showAll, setAll]=useState(false)
+    const [reviews]=useHooks([])
     const navigate=useNavigate();
-    useEffect(()=>{
-        fetch('GameReviewData.json')
-        .then(res=>res.json())
-        .then(data=>setReviews(data))
-    },[])
+   
     const ShowAllReviews =()=>
     {
         navigate('/review')
