@@ -1,5 +1,5 @@
 
-import { Area, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
    const data= [
@@ -57,7 +57,7 @@ const Dashboard = () => {
               </div>
               <div className='col-md-6'>
                       <div>
-                      <h3>Month Wise Sell</h3>
+                      <h3>investment vs Revenue</h3>
                       <div className='p-3 d-flex justify-content-center'>
                       <BarChart width={300} height={250} data={data}>
                         <CartesianGrid strokeDasharray="3 4" />

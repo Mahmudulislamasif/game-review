@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 import Image from '../../../src/GameImage/DreamLeague.png'
 import useHooks from '../Hooks/Hooks';
@@ -17,8 +17,9 @@ const Home = () => {
             <div className='row g-4'>
                <div className='col-md-6'>
                  <div className='header'>
-                 <h1 className='mb-4'>Best Football App</h1>
-                 <h5 className='mb-4'>This is one of the best Football game App I play </h5>
+                 <h1 className='mb-4'>Dream League Soccer</h1>
+                 <h4 className='mb-4'>Best FootBall Game on Play Store</h4>
+                 <h4 className='mb-4'>League matches are very interesting </h4>
                  <button className='load-button'>Live Demo</button>
                  </div>
                </div>
@@ -27,7 +28,7 @@ const Home = () => {
                </div>
             </div>
             <div>
-                <h1 className='mt-3'>Total Reviews</h1> 
+                <h1 className='mt-3'>Total Reviews (3)</h1> 
             </div>
                 <div className='row g-4'>
                 {
