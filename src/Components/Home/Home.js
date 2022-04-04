@@ -37,7 +37,7 @@ const Home = () => {
                 </div>
 
             <div>
-                <button className='review-all-btn' onClick={()=>ShowAllReviews(reviews)}>Review All</button>
+                <button className='review-all-btn' onClick={()=>ShowAllReviews(reviews)}><span>Review All</span></button>
             </div>
         </div>
     );

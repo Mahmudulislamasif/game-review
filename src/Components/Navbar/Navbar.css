@@ -16,3 +16,8 @@
     color: white;
     padding-left: 10px;
 }
+.navbar-class:hover
+{
+    border-bottom: 2px solid white;
+    color: white;
+}

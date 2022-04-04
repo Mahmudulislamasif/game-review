@@ -25,9 +25,13 @@ body
 .review-all-btn
 {
     background-color: antiquewhite;
-    border: 2px solid salmon;
+    border: 2px solid rgb(212, 181, 177);
     border-radius: 5px;
     margin-bottom: 10px;
     color: black;
 }
-
+.review-all-btn:hover 
+{
+    background-color: rgb(16, 20, 13);
+    color:white;
+}
