@@ -1,37 +1,37 @@
 [
     {
         "id":1,
-        "name":"William",
-        "review":"This Game is good",
+        "name":"Asif Mahmud",
+        "review":"This is the best game I have ever played.",
         "ratings":4.8
     },
     {
         "id":2,
-        "name":"Fahim",
-        "review":"The game was great but 2022 update ruined everything",
+        "name":"Shafayet Ahmed",
+        "review":"This game is very interesting and challenging to play.",
         "ratings":4.5
     },
     {
         "id":3,
-        "name":"Ashraf",
-        "review":"This is probable the best action football game on the playstore",
+        "name":"Ashikul Hosen",
+        "review":"This is probably the best action football game on the playstore.",
         "ratings":4.3
     },
     {
         "id":4,
-        "name":"Jawadul Karim",
+        "name":"Himel Dhar",
         "review":"Everything is good except the main game paly",
         "ratings":3
     },
     {
         "id":5,
-        "name":"Javed Eshaan",
+        "name":"Arpan Barua",
         "review":"The animations, graphics are good to watch.",
         "ratings":3
     },
     {
         "id":6,
-        "name":"John Black",
+        "name":"Arshadul Houque",
         "review":"Nicely done, But not perfect",
         "ratings":4
     }
