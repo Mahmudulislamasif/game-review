@@ -17,23 +17,24 @@ const Home = () => {
             <div className='row g-4'>
                <div className='col-md-6'>
                  <div className='header'>
-                 <h1>Best Football App</h1>
-                 <h5>This is one of the best Football App I played </h5>
-                 </div>
-                 <div>
-                     <button className='load-button'>Button</button>
+                 <h1 className='mb-4'>Best Football App</h1>
+                 <h5 className='mb-4'>This is one of the best Football game App I play </h5>
+                 <button className='load-button'>Live Demo</button>
                  </div>
                </div>
                <div className='col-md-6 '>
-                 <img className='w-50' src={Image} alt=''/>
+                 <img className='w-75 mt-3' src={Image} alt=''/>
                </div>
             </div>
             <div>
                 <h1>Total Reviews</h1> 
             </div>
+                <div className='row g-4'>
                 {
-                 reviews.map(newReview=><ReviewProduct newReview={newReview}></ReviewProduct>)
+                 reviews.slice(0,3).map(newReview=><ReviewProduct newReview={newReview}></ReviewProduct>)
                 } 
+                </div>
+
             <div>
                 <button onClick={()=>ShowAllReviews(reviews)}>Review All</button>
             </div>

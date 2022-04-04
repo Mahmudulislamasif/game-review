@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+
 import useHooks from '../Hooks/Hooks';
 import ReviewProduct from '../ReviewProduct/ReviewProduct';
 
@@ -7,10 +7,12 @@ const Review = () => {
     
     return (
         <div>
-              
-                {
-                 reviews.map(newReview=><ReviewProduct newReview={newReview}></ReviewProduct>)
+               <div className='row g-4'>
+               {
+                 reviews.map(newReview=><ReviewProduct key={newReview.id} newReview={newReview}></ReviewProduct>)
                 } 
+               </div>
+
         </div>
     );
 };

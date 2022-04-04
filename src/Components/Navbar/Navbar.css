@@ -1,0 +1,30 @@
+*
+{
+    margin: 0;
+}
+.navbar-parent-class
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.navbar-class
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-class-one
+{
+    margin-right: 5px;
+}
+.navbar-class-two
+{
+    margin-right: 5px;
+}
+.navbar-class-three
+{
+    margin-right: 5px;
+}
