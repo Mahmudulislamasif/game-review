@@ -1,0 +1,8 @@
+.style-error
+{
+    height: 100vh;
+    background-color: #01a9b4;
+}
+.style-error h1{
+    color: red;
+}
