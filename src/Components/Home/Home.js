@@ -27,16 +27,16 @@ const Home = () => {
                </div>
             </div>
             <div>
-                <h1>Total Reviews</h1> 
+                <h1 className='mt-3'>Total Reviews</h1> 
             </div>
                 <div className='row g-4'>
                 {
-                 reviews.slice(0,3).map(newReview=><ReviewProduct newReview={newReview}></ReviewProduct>)
+                 reviews.slice(0,3).map(newReview=><ReviewProduct key={newReview.id} newReview={newReview}></ReviewProduct>)
                 } 
                 </div>
 
             <div>
-                <button onClick={()=>ShowAllReviews(reviews)}>Review All</button>
+                <button className='review-all-btn' onClick={()=>ShowAllReviews(reviews)}>Review All</button>
             </div>
         </div>
     );
