@@ -11,3 +11,8 @@
     display: flex;
     justify-content: space-between;
 }
+.face-image
+{
+    width: 50px;
+    border-radius: 25px;
+}

@@ -3,37 +3,44 @@
         "id":1,
         "name":"Asif Mahmud",
         "review":"This is the best game I have ever played.",
-        "ratings":4.8
+        "ratings":4.8,
+        "image":"./PeopleImage/boy-cartoon-face-free-vector.jpg"
+        
     },
     {
         "id":2,
         "name":"Shafayet Ahmed",
         "review":"This game is very interesting and challenging to play.",
-        "ratings":4.5
+        "ratings":4.5,
+        "image":"./PeopleImage/Cartoon-Face-DRAWING-–-STEP-10.jpg"
     },
     {
         "id":3,
         "name":"Ashikul Hosen",
         "review":"This is probably the best action football game on the playstore.",
-        "ratings":4.3
+        "ratings":4.3,
+        "image":"./PeopleImage/cute-man-face-cartoon-cute-man-face-cartoon-vector-illustration-graphic-design-135024353.jpg"
     },
     {
         "id":4,
         "name":"Himel Dhar",
         "review":"Everything is good except the main game play.",
-        "ratings":3
+        "ratings":3,
+        "image":"./PeopleImage/friendly-smile-on-face-a-guy-vector-27339129.jpg"
     },
     {
         "id":5,
         "name":"Arpan Barua",
         "review":"The animations, graphics are good to watch.",
-        "ratings":4.5
+        "ratings":4.5,
+        "image":"./PeopleImage/young-man-head-avatar-cartoon-face-character-vector-21757743.jpg"
     },
     {
         "id":6,
         "name":"Arshadul Houque",
         "review":"Nicely done, But not perfect",
-        "ratings":3.6
+        "ratings":3.6,
+        "image":"./PeopleImage/angry-and-sad-emoji-115495132213jxf0zx4az.png"
     }
 
 

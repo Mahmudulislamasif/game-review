@@ -1,5 +1,5 @@
 
-import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
    const data= [
@@ -17,7 +17,7 @@ const Dashboard = () => {
         },
         {
             "month": "May",
-            "investment": 500000,
+            "investment": 50000,
             "sell": 726,
             "revenue": 67010
         },
@@ -45,7 +45,7 @@ const Dashboard = () => {
             <div className='row g-4'>
               <div className='col-md-6'>
               <h3>Month Wise Sell</h3>
-              <LineChart width={300} height={250} data={data}
+               <LineChart width={300} height={250} data={data}
                 margin={{ top: 5, right: 30, left: 10, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month" />
@@ -54,6 +54,7 @@ const Dashboard = () => {
                 <Legend />
                 <Line type="monotone" dataKey="sell" stroke="#8884d8" />
                 </LineChart>
+
               </div>
               <div className='col-md-6'>
                       <div>
@@ -71,8 +72,32 @@ const Dashboard = () => {
                       </div>
                       </div>
               </div>
+              <div className='col-md-6'>
+              <h3>investment vs Revenue</h3>
+              <AreaChart width={300} height={250} data={data}
+                        margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                        <defs>
+                            <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
+                            <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
+                            </linearGradient>
+                            <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
+                            <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
+                            </linearGradient>
+                        </defs>
+                        <XAxis dataKey="month" />
+                        <YAxis />
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <Tooltip />
+                        <Area type="monotone" dataKey="investment" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+                        <Area type="monotone" dataKey="revenue" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
+                        </AreaChart>
+              </div>
         </div>
+        
        </div>
+       
 
     );
 };
